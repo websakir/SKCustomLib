@@ -112,9 +112,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HttpRequestTranslator.cs" />
+    <Compile Include="Jobs\PaymentAcknowledgeJob.cs" />
+    <Compile Include="Services\DebtCollectionServiceCustom.cs" />
+    <Compile Include="DebtManagerCustom.cs" />
+    <Compile Include="SmsRequestTranslatorCustom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseServiceTranslator.cs" />
     <Compile Include="SimulatorBillingAdapter.cs" />
+    <Compile Include="SubscriberLifetimeScoringCondition.cs" />
+    <Compile Include="UssdRequestTranslatorCustom.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,15 +17,17 @@ using HttpRequest = Simbrella.Framework.Integration.Http.HttpRequest;
 
 namespace CustomLibrary
 {
-    public class HttpRequestTranslator : SmsRequestTranslator
+    public class SmsRequestTranslatorCustom : SmsRequestTranslator
     {
         private HttpServer _httpServer;
-        private IDAL _dAL = Factory.GetDal();
         private ILogger _logger = Factory.GetLoggerProvider().GetLogger("requestservice");
 
-        public HttpRequestTranslator(IConfigItem config)
+        public SmsRequestTranslatorCustom(IConfigItem config)
         {
-            _httpServer = new HttpServer("http://+:9000/", false);
+            string ip = config["ip"].Value;
+            string port = config["port"].Value;
+
+            _httpServer = new HttpServer("http://"+ip+":"+port+ "/smsrequests/", false);
             _httpServer.MessageReceived += RequestReceived;
         }
         public override bool IsChannelHealthy => true;
