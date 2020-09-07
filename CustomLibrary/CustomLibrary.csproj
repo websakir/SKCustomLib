@@ -91,10 +91,10 @@
       <HintPath>..\..\..\..\Desktop\bin\Simbrella.Framework.Application.exe</HintPath>
     </Reference>
     <Reference Include="Simbrella.Framework.Technology">
-      <HintPath>..\..\..\..\Desktop\bin\Simbrella.Framework.Technology.dll</HintPath>
+      <HintPath>D:\TfsMappings\Simbrella.SimKredit.Core\Main\Simbrella.SimKredit.Core\Simbrella.SimKredit.Core\bin\Debug\Simbrella.Framework.Technology.dll</HintPath>
     </Reference>
     <Reference Include="Simbrella.SimKredit.Core">
-      <HintPath>..\..\..\..\Desktop\bin\Simbrella.SimKredit.Core.dll</HintPath>
+      <HintPath>D:\TfsMappings\Simbrella.SimKredit.Core\Main\Simbrella.SimKredit.Core\Simbrella.SimKredit.Core\bin\Debug\Simbrella.SimKredit.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

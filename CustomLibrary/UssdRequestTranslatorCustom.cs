@@ -97,7 +97,7 @@ namespace CustomLibrary
              new XElement("ussdResponse",
              new XAttribute("sourceNumber", request.SourceNumber),
              new XAttribute("destinationNumber", request.DestinationNumber),
-             new XAttribute("isNISession", "false"),
+             new XAttribute("isNISession", "true"),
              new XAttribute("closeSession", "true"),
              new XAttribute("content", ussdRequestReceivedEventArgs.Response.ResponseContent))).ToString();
 

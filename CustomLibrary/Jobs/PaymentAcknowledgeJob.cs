@@ -4,8 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-using Lextm.SharpSnmpLib.Security;
-
 using Simbrella.Framework.Communication.Abstractions;
 using Simbrella.Framework.Config.Abstractions;
 using Simbrella.Framework.DAL.Abstractions;
